@@ -96,9 +96,9 @@ public class MyHomework2 {
             sumSecondHalf += array[i];
         }
         if (sumOneHalf > sumSecondHalf) {
-            System.out.println(sumOneHalf);
+            System.out.println("Сумма первой половины массива больше");
         } else {
-            System.out.println(sumSecondHalf);
+            System.out.println("Сумма второй половины массива больше");
         }
     }
 

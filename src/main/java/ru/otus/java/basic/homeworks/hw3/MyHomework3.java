@@ -16,7 +16,10 @@ public class MyHomework3 {
         System.out.println("Максимальный элемент массива равен " + findMax(arr));
 
         // № 2
-        int size = 0;
+        int size;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите сторону квадрата");
+        size = scanner.nextInt();
         square(size);
 
         // № 3
@@ -77,9 +80,6 @@ public class MyHomework3 {
      */
 
     public static void square(int size) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите сторону квадрата");
-        size = scanner.nextInt();
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.print("*");
@@ -110,7 +110,7 @@ public class MyHomework3 {
      * 4. Реализовать метод findMax(int[][] array) который должен найти и вернуть максимальный элемент массива;
      */
     public static int findMax(int[][] array) {
-        int max = 0;
+        int max = array[1][1];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j] > max) {

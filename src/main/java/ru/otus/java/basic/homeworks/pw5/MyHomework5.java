@@ -9,7 +9,7 @@ public class MyHomework5 {
     public static void main(String[] args) {
         Cat cat = new Cat("Мурзик", 10, 0, 10);
         Dog dog = new Dog("Полкан", 15, 5, 80);
-        Horse horse = new Horse("Юлий", 35, 10, 200);
+        Horse horse = new Horse("Юлий", 35, 10, 160);
 
         cat.info();
         dog.info();

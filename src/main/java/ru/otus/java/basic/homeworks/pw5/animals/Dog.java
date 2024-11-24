@@ -10,8 +10,9 @@ public class Dog extends Animal {
 
     @Override
     public float swim(int distance) {
-        int time = distance/speedSwim;
-        float remainingEndurance = (endurance/2) - distance;
+        float rateEndurance = 2;                // расход выносливости - 2 у.е на 1 метр.
+        int time = distance / speedSwim;
+        float remainingEndurance = (endurance / rateEndurance) - distance;
         if (remainingEndurance < 0) {
             return -1;
         }

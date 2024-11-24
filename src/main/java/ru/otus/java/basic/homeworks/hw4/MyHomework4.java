@@ -8,7 +8,6 @@ public class MyHomework4 {
 
         User user = new User("Иванов", "Иван", "Иванович",
                 2000, "ivan@mail.ru");
-        user.info();
 
         /*
         4. В методе main() Main класса создайте массив из 10 пользователей и заполните его объектами и с помощью
@@ -31,9 +30,9 @@ public class MyHomework4 {
         int currentYear = Year.now().getValue();
         System.out.println("Информация о пользователях старше 40 лет: ");
         for (int i = 0; i < arrayUsers.length; i++) {
-            if (arrayUsers[i].yearBirth < (currentYear - 40)) {
-                System.out.println(arrayUsers[i].surname + " " + arrayUsers[i].name + " " +
-                        arrayUsers[i].patronymicSurname + " - " + arrayUsers[i].yearBirth);
+            if (arrayUsers[i].getYearBirth() < (currentYear - 40)) {
+               user.info(arrayUsers[i].getSurname(), arrayUsers[i].getName(), arrayUsers[i].getPatronymicSurname(),
+                       arrayUsers[i].getYearBirth(), arrayUsers[i].getEmail());
             }
             ;
         }

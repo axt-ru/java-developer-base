@@ -36,7 +36,7 @@ public class User {
         this.email = email;
     }
 
-    public void info(String surname, String name, String patronymicSurname, int yearBirth, String email) {
+    public void info() {
         System.out.println("ФИО: " + surname + " " + name + " " + patronymicSurname + "\n" + "Год рождения: " + yearBirth
                 + "\n" + "e-mail: " + email);
     }

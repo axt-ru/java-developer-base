@@ -11,9 +11,9 @@ public class Animal {
     }
 
     public float run(int distance) {
-        float rateEndurance = 1;                // расход выносливости
+        float rateEndurance = 1;                // скорость расхода выносливости
         int time = distance/speedRun;
-        float remainingEndurance = (endurance * rateEndurance) - distance;
+        float remainingEndurance = endurance - (distance * rateEndurance);
         if (remainingEndurance < 0) {
             System.out.println(name + " устал и не может пробежать данную дистанцию");
             return -1;

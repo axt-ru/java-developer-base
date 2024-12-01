@@ -12,7 +12,7 @@ public class Horse extends Animal {
     public float swim(int distance) {
         float rateEndurance = 4;                // расход выносливости - 4 у.е на 1 метр.
         int time = distance/speedSwim;
-        float remainingEndurance = (endurance / rateEndurance) - distance;
+        float remainingEndurance = endurance - (rateEndurance * distance);
         if (remainingEndurance < 0) {
             return -1;
         }

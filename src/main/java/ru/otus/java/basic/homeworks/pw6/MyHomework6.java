@@ -9,7 +9,7 @@ public class MyHomework6 {
         Cat[] cats = {
                 new Cat("Матроскин", 20),
                 new Cat("Пушок", 25),
-                new Cat("Базилио", 30),
+                new Cat("Мурзик", 30),
                 new Cat("Леопольд", 40)
         };
 

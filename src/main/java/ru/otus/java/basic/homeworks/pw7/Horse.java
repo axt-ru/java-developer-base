@@ -19,7 +19,7 @@ public class Horse implements Transport {
         }
         stamina -= distance / 5; // Расход сил
         if (stamina < 0) {
-            System.out.println("Нехватает сил для перемещения");
+            System.out.println("Нехватает сил для перемещения по этой местности");
             return false;
         }
         return true;

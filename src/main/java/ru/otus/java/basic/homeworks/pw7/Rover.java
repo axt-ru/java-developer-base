@@ -9,7 +9,7 @@ public class Rover implements Transport {
 
     @Override
     public boolean move(int distance, Locality locality) {
-        return true; // Вездеход везде проедет
+        return true; // Вездеход проедет везде
     }
 
 

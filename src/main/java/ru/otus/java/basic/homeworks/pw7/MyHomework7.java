@@ -16,7 +16,7 @@ public class MyHomework7 {
         man.move(50, Locality.SWAMP); // Пробуем на лошади по болоту
 
         man.getOnTransport(new Bicycle());
-        man.move(50, Locality.DENSE_FOREST); // Пробуем на велосипеде по лесу
+        man.move(50, Locality.DENSE_FOREST); // Пробуем на велосипеде по густому лесу
 
         man.getOnTransport(new Rover());
         man.move(200, Locality.SWAMP); // По болоту на вездеходе

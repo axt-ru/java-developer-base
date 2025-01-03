@@ -19,7 +19,7 @@ public class Car implements Transport {
             return false;
         }
         if (locality == Locality.DENSE_FOREST || locality == Locality.SWAMP) {
-            return false; // Машина не проедет по густому лесу и болоту
+            return false; // Машина не проедет по болоту и густому лесу
         }
         fuel -= distance / 5; // Расход топлива
         return true;

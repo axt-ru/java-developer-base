@@ -15,7 +15,7 @@ public class Man {
 
     public void getOffTransport() {
         this.currentTransport = null;
-        System.out.println(name + " вышел с транспорта.");
+        System.out.println(name + " вышел с транспорта");
     }
 
     public void move(int distance, Locality locality) {

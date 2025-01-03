@@ -4,5 +4,4 @@ public enum Locality {
     DENSE_FOREST, // густой лес
     PLAIN, // равнина
     SWAMP  // болото
-
 }

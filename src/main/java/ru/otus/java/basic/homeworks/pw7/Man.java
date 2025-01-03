@@ -26,7 +26,7 @@ public class Man {
                 System.out.println(currentTransport.getName() + " не может перемещаться по " + locality);
             }
         } else {
-            System.out.println(name + " прошел пешком " + distance + " метров.");
+            System.out.println(name + " прошел пешком " + distance + " метров");
         }
     }
 

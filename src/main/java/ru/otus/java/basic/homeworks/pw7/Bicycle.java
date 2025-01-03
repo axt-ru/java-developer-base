@@ -10,7 +10,7 @@ public class Bicycle implements Transport {
     @Override
     public boolean move(int distance, Locality locality) {
         if (locality == Locality.SWAMP) {
-            return false; // Велосипед не может проехать по болоту
+            return false; // Велосипед не сможет проехать по болоту
         }
         return true;
     }

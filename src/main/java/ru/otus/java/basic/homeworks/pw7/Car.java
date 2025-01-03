@@ -15,11 +15,11 @@ public class Car implements Transport {
     @Override
     public boolean move(int distance, Locality locality) {
         if (fuel <= 0) {
-            System.out.println("Недостаточно бензина для перемещения");
+            System.out.println("Недостаточно бензина для перемещения.");
             return false;
         }
         if (locality == Locality.DENSE_FOREST || locality == Locality.SWAMP) {
-            return false; // Машина не проедет по болоту и густому лесу
+            return false; // Машина не проедет по густому лесу и болоту
         }
         fuel -= distance / 5; // Расход топлива
         return true;

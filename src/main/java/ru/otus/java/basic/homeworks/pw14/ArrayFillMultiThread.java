@@ -31,3 +31,4 @@ public class ArrayFillMultiThread {
         System.out.println("Время выполнения в четырёх потоках: " + (endTime - startTime) + " ms");
     }
 }
+// В этом 1 случае время выполнения было - 14538

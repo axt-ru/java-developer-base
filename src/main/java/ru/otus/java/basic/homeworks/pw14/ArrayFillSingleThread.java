@@ -15,3 +15,4 @@ public class ArrayFillSingleThread {
         System.out.println("Время выполнения в одном потоке: " + (endTime - startTime) + " ms");
     }
 }
+// В этом 2 случае (4 потоков) время выполнения на ПК было - 5134

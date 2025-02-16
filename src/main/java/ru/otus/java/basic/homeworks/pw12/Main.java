@@ -12,25 +12,21 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String[] files = dir.list();
         boolean fileExist = false;
-        String selectFile;
+        String selectFile = null;
 
         while (true) {
             System.out.println("Выберите файл, с которым хотите работать");
             for (String fileName : files) {
                 System.out.print(fileName + " | ");
             }
-            selectFile = in.next();
+            selectFile = in.nextLine();
             for (String fileName : files) {
                 if (fileName.equals(selectFile)) {
-                    fileExist = true;
+                    break;
                 }
             }
-
-            if (fileExist) {
-                break;
-            } else {
-                System.out.println("Неправильное имя файла. Попробуйте снова");
-            }
+            System.out.println("Неправильное имя файла. Попробуйте снова");
+            break;
 
         }
         System.out.println(selectFile);
@@ -41,23 +37,22 @@ public class Main {
         byte[] buffer = text.getBytes(StandardCharsets.UTF_8);
 
         try (FileOutputStream out = new FileOutputStream(selectFile, true)) {
-            for (int i = 0; i < buffer.length; i++) {
-                out.write(buffer[i]);
-            }
-        } catch ( IOException e) {
+
+            out.write(buffer);
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         try (FileInputStream fis = new FileInputStream(selectFile);
-        BufferedInputStream bis = new BufferedInputStream(fis);
-        InputStreamReader inFile = new InputStreamReader(bis))
-        {
+             BufferedInputStream bis = new BufferedInputStream(fis);
+             InputStreamReader inFile = new InputStreamReader(bis)) {
             int n = inFile.read();
             while (n != -1) {
                 System.out.print((char) n);
                 n = inFile.read();
-        }
-        } catch ( IOException e) {
+            }
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
